@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 .container {
@@ -88,7 +89,7 @@
 .search > input {
     border-radius: 50px;
     border: none;
-    background-color: rgb(181, 179, 179);
+    background-color: antiquewhite;
 }
 
 .search > p {
@@ -128,15 +129,17 @@
 
 /* CONTENT */
 .main {
-    background-color: blueviolet;
+    background-color: antiquewhite;
     grid-column: 2/ 3;
     grid-row: 2 / 5;
     width: 100%;
 }
 
-.main >  .content {
-    outline: 2px solid yellow;
+.main > h1 {
+    margin: 20px 0 0 20px;
+}
 
+.main >  .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
@@ -145,8 +148,32 @@
 }
 
 .card {
-    height: 250px;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    height: 200px;
     background-color: azure;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    /* outline: 2px solid red; */
+    height: 80%;
+}
+
+.card-tags {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+}
+
+.card-tag {
+    width: 24px;
+    height: 24px;
 }
 
 
